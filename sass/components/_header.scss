@@ -1,0 +1,163 @@
+// @import"./utils/vars";
+/* Header */
+
+.page-header {
+    background-color: $background_text_color;
+    border-bottom: 1px solid $header_border_color;
+}
+
+    // Миксин
+.page-container {
+    @include flex-center(flex);
+
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+}
+
+.logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    color: $title_text_color;
+
+    font-family: $logo-font;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+        &-accent {
+            color: $accent_color;
+        }
+  }
+.navigation {
+    display: flex;
+}
+
+.site-nav.list {
+    display: flex;
+}
+
+.page-contacts {
+    display: flex;
+}
+
+.site-nav-li {
+    position: relative;
+
+    display: flex;
+    margin-left: 86px;
+    padding-top: 31.5px;
+    padding-bottom: 31.5px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+}
+
+.site-nav .link {
+    color: $title_text_color;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    @include cubic(color);
+
+        &:hover, &:focus {
+            color: $accent_color;
+          }
+        &.current {
+            color: $accent-color;
+                &::after {
+                    display: inline-block;
+                    content: "";
+
+                    bottom: -1px;
+                    left: 0;
+                    position: absolute;
+
+                    height: 4px;
+                    width: 100%;
+                    background: $accent_color;
+                    border-radius: 2px;
+                }
+        }
+}
+
+.email-and-phone {
+    display: flex;
+
+    margin-left: auto;
+    align-items: center;
+
+        &--item {
+            display: inline-flex;
+        }
+}
+
+.email {
+    display: inline-flex;
+    margin-right: 31px;
+    color: $text_color;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    align-items: center;
+    justify-content: center;
+
+    @include cubic(color);
+
+        &:hover, &:focus {
+            color: $accent_color;
+        }
+
+  }
+
+.icon-envelope {
+    width: 16px;
+    height: 11.2px;
+    margin-right: 10px;
+    fill: currentColor;
+
+        &:hover, &:focus {
+            fill: currentColor;
+        }
+}
+
+.icon-phone {
+    width: 10px;
+    height: 15px;
+    margin-right: 10px;
+    fill: currentColor;
+
+        &:hover, &:focus {
+            fill: currentColor;
+        }
+  }
+
+.phone {
+    display: inline-flex;
+    color: $text_color;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    align-items: center;
+    justify-content: center;
+
+    @include cubic(color);
+
+        &:hover, &:focus {
+            color: $accent_color;
+        }
+  }

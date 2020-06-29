@@ -1,0 +1,54 @@
+// Buttons
+
+.button {
+    display: inline-flex;
+    min-height: 26px;
+    padding: 6px 22px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+
+
+    color: $title_text_color;
+    background-color: $accent_color;
+
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+
+    @include cubic(background-color fill);
+
+        &.primary {
+            width: 200px;
+            padding: 10px 29px;
+
+            color: $background_text_color;
+            background-color: $accent-color;
+            border-color: transparent;
+            fill: $background_text_color;
+        }
+
+        &.secondary {
+            color: $title_text_color;
+            background-color: $secondary_background_color;
+            border-color: transparent;
+
+                &:hover {
+                    color: $background_text_color;
+                    background-color: $accent-color;
+                }
+        }
+
+        &:focus {
+            color: $accent-color;
+            background-color: $background_text_color;
+          }
+
+        &:hover {
+            color: $accent-color;
+            background-color: $background_text_color;
+            fill: $accent-color;
+        }
+}

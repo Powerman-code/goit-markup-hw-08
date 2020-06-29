@@ -1,0 +1,61 @@
+/* Постоянные клиенты */
+
+.clients-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    &-yaco {
+        width: 49.23px;
+        height: 44.27px;
+    }
+
+    &-companytaglinehere {
+        width: 40px;
+        height: 52px;
+    }
+
+    &-company {
+        width: 41px;
+        height: 42.6px;
+    }
+
+    &-foster_peters {
+        width: 80px;
+        height: 42px;
+    }
+
+    &-brand {
+        width: 52px;
+        height: 47px;
+    }
+
+    &-company_tag_line2 {
+        width: 89px;
+        height: 46px;
+    }
+}
+
+.clients-link {
+    @include flex-center(flex);
+
+    width: 170px;
+    height: 90px;
+    box-sizing: border-box;
+    border: 1px solid $buttons_color;
+    border-radius: 4px;
+    fill: $buttons_color;
+
+    @include cubic(fill border-color);
+
+        &:hover, &:focus {
+            border: 1px solid $accent_color;
+            fill: $accent_color;
+        }
+}

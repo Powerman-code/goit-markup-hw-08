@@ -1,0 +1,81 @@
+// Приимущества
+
+.test > .item:nth-child(2n+4) {
+    background-color: rgb(226, 194, 194);
+}
+
+.section-title {
+    @extend .visually-hidden;
+}
+
+.section-title,
+.work-title,
+.team-title,
+.clients {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    border-bottom: 1px solid $background_color;
+  }
+
+.section-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.section-block {
+    display: inline-block;
+    width: 270px;
+    height: 120px;
+    background-color: $secondary_background_color;
+    border-radius: 4px;
+}
+
+.icon-antenna {
+    padding: 25px 102.34px;
+    width: 65.32px;
+    height: 70px;
+}
+
+.icon-clock::before {
+    background-image: url('../images/clock.svg');
+}
+
+.icon-pc::before {
+    background-image: url('../images/pc.svg');
+}
+
+.icon-astronaut::before {
+    background-image: url('../images/astronaut.svg');
+}
+
+.section-text {
+    margin-top: 10px;
+
+    color: $text_color;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.undersection {
+    margin-top: 30px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}

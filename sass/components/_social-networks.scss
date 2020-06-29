@@ -1,0 +1,63 @@
+ /* Элементы соц сетей */
+
+.team-networks {
+    padding-bottom: 24px;
+}
+
+.social-networks {
+    display: flex;
+}
+
+.sn-element {
+    width: calc((100% - 10px) / 4);
+    margin-right: 10px;
+
+        &:last-child {
+            margin-right: 32px;
+        }
+
+        &:first-child {
+            margin-left: 32px;
+        }
+}
+
+
+
+.link-socialnetworks {
+    width: 44px;
+    height: 44px;
+    @include flex-center(flex);
+    background-color: $background_text_color;
+    border-radius: 50px;
+    fill: $buttons_color;
+
+    @include cubic(background-color);
+
+        &:hover, &:focus {
+            background-color: $accent_color;
+            fill: $background_text_color;
+        }
+}
+
+.icon-twitter,
+.icon-instagram,
+.icon-facebook,
+.icon-linkedin {
+  width: 20px;
+  height: 20px;
+}
+
+.footer--link--socialnetworks {
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: $background_text_color;
+}
+
+.footer-element {
+    &:last-child {
+        margin-right: 0px;
+    }
+
+    &:first-child {
+        margin-left: 0px;
+    }
+}
