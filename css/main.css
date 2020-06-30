@@ -41,27 +41,14 @@ textarea {
   resize: none;
 }
 
-/* Header */
 .page-header {
   background-color: #FFFFFF;
   border-bottom: 1px solid #ECECEC;
 }
 
 .page-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 1170px;
 }
 
 .logo {
@@ -79,32 +66,8 @@ textarea {
   color: #2196F3;
 }
 
-.navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.site-nav.list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.page-contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .site-nav-li {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 86px;
-  padding-top: 31.5px;
-  padding-bottom: 31.5px;
 }
 
 .site-nav-li:last-child {
@@ -246,27 +209,7 @@ textarea {
   margin-right: auto;
 }
 
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1170px) {
-  .container {
-    width: 1170px;
-  }
-}
-
 .overlay {
-  max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/header.jpg);
@@ -277,13 +220,10 @@ textarea {
 }
 
 .hero {
-  padding-bottom: 94px;
   text-align: center;
 }
 
 .hero-title {
-  padding-top: 200px;
-  margin-bottom: 46px;
   color: #FFFFFF;
   font-family: Roboto, sans-serif;
   font-weight: 900;
@@ -293,31 +233,56 @@ textarea {
   text-transform: uppercase;
 }
 
-.test > .item:nth-child(2n+4) {
-  background-color: #e2c2c2;
-}
-
-.section-title,
-.work-title,
-.team-title,
-.clients {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  border-bottom: 1px solid #E5E5E5;
-}
-
 @media screen and (min-width: 480px) {
-  .section-list {
-    width: 480px;
+  .section-title,
+  .work-title,
+  .team-title,
+  .clients {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-title,
+  .work-title,
+  .team-title,
+  .clients {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .section-title,
+  .work-title,
+  .team-title,
+  .clients {
+    width: 1170px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (max-width: 1169px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    border-bottom: 1px solid #E5E5E5;
   }
 }
 
@@ -327,9 +292,9 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1170px) {
   .section-list {
-    width: 1140px;
+    width: 1170px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -351,11 +316,14 @@ textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 30px;
   }
 }
 
 .section-block {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -378,11 +346,6 @@ textarea {
     width: 1170px;
     width: 33.3333%;
   }
-}
-
-.icon-advantages {
-  width: 65.32px;
-  height: 70px;
 }
 
 .icon-clock::before {
@@ -415,10 +378,49 @@ textarea {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 480px) {
+  .undersection {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .undersection {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .undersection {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .undersection {
+    width: 1170px;
+  }
+}
+
 /* Чем мы занимаемся */
-.work {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 767px) {
+  .work {
+    width: 768px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .work {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .work {
+    max-width: 1170px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .work-list {
@@ -472,8 +474,6 @@ textarea {
 
 .team {
   /* background: rgb(196, 45, 103); */
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .team .team-text {
@@ -492,21 +492,9 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
-  width: 1170px;
-}
-
-.team-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .team-member {
-  margin-top: 30px;
-  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -515,8 +503,6 @@ textarea {
 }
 
 .team-card {
-  width: 270px;
-  overflow: hidden;
   border-radius: 4px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -524,18 +510,22 @@ textarea {
 }
 
 /* Постоянные клиенты */
-.clients-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 1170px) {
+  .clients-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
-.clients-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media screen and (min-width: 1170px) {
+  .clients-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .icon-yaco {
@@ -578,10 +568,7 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
   height: 90px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   fill: #AFB1B8;
@@ -596,6 +583,12 @@ textarea {
 .clients-link:hover, .clients-link:focus {
   border: 1px solid #2196F3;
   fill: #2196F3;
+}
+
+@media screen and (max-width: 480px) {
+  .clients-link {
+    width: calc((100% - 30px) / 2);
+  }
 }
 
 .visually-hidden, .section-title {
@@ -685,13 +678,6 @@ textarea {
 }
 
 .footer .footer-adress1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   color: #FFFFFF;
   font-style: normal;
   font-weight: 400;
@@ -723,24 +709,9 @@ textarea {
 }
 
 .footer-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
   margin-left: auto;
   margin-right: auto;
-  padding: 60px 15px;
-  width: 1170px;
   height: 132px;
-}
-
-.footer-frame {
-  display: block;
 }
 
 .join {
@@ -770,23 +741,7 @@ textarea {
   height: 24px;
 }
 
-.auth-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -webkit-box-pack: baseline;
-      -ms-flex-pack: baseline;
-          justify-content: baseline;
-}
-
 .footer-input {
-  padding-left: 16px;
-  width: 358px;
-  height: 50px;
-  margin-right: 12px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-sizing: border-box;

@@ -1,8 +1,5 @@
 // Приимущества
 
-.test > .item:nth-child(2n+4) {
-    background-color: rgb(226, 194, 194);
-}
 
 .section-title {
     @extend .visually-hidden;
@@ -12,6 +9,24 @@
 .work-title,
 .team-title,
 .clients {
+
+    @media screen and (min-width: 480px) {
+        margin-bottom: 30px;
+
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+
+    @media screen and (min-width: 768px) {
+    width: 768px;
+    }
+
+    @media screen and (min-width: 1170px) {
+    width: 1170px;
+
     margin-bottom: 50px;
 
     font-weight: 700;
@@ -19,26 +34,44 @@
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    }
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    border-bottom: 1px solid $background_color;
+
+    @media screen and (min-width: 480px) {
+        // width: 450px;
+
+    }
+
+    @media screen and (min-width: 768px) {
+
+    }
+
+    @media screen and (max-width: 1169px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1170px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        border-bottom: 1px solid $background_color;
+    }
   }
 
 .section-list {
 
     @media screen and (min-width: 480px) {
-        width: 480px;
+
     }
 
     @media screen and (min-width: 768px) {
         width: 768px;
     }
 
-    @media screen and (min-width: 1140px) {
-        width: 1140px;
+    @media screen and (min-width: 1170px) {
+        width: 1170px;
 
         display: flex;
         justify-content: space-between;
@@ -51,13 +84,14 @@
         display: block;
         justify-content: center;
         align-items: center;
+        margin-bottom: 30px;
     }
 }
 
 .section-block {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+        justify-content: center;
+        align-items: center;
 
     height: 120px;
     background-color: $secondary_background_color;
@@ -77,11 +111,6 @@
     }
 }
 
-.icon-advantages {
-    // padding: 25px 102.34px;
-    width: 65.32px;
-    height: 70px;
-}
 
 .icon-clock::before {
     background-image: url('../images/clock.svg');
@@ -114,4 +143,24 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+
+    }
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
+    width: 768px;
+    // text-align: unset;
+    }
+
+    @media screen and (min-width: 1170px) {
+    width: 1170px;
+    // text-align: unset;
+    }
+
 }
