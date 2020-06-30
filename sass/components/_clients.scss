@@ -10,7 +10,8 @@
 
 .clients-list {
     @media screen and (min-width: 480px) {
-
+        display: flex;
+        flex-wrap: wrap;
     }
 
     @media screen and (min-width: 768px) {
@@ -21,6 +22,20 @@
     display: flex;
     justify-content: space-between;
     }
+}
+
+.clients-item {
+    width: calc((100% - 30px) / 2);
+
+    &:nth-child(odd) {
+        margin-left: 15px;
+    }
+
+    &:nth-child(2n) {
+        margin-left: 15px;
+    }
+
+    margin-bottom: 30px;
 }
 
 .icon {
@@ -61,7 +76,7 @@
     // width: 170px;
 
 
-    height: 90px;
+    height: 89px;
     // box-sizing: border-box;
     border: 1px solid $buttons_color;
     border-radius: 4px;
@@ -75,11 +90,11 @@
         }
 
     @media screen and (max-width: 480px) {
-        // display: flex;
+
         // justify-content: center;
         // align-items: center;
         // flex-direction: column;
-        width: calc((100% - 30px) / 2);
+
     }
 
     @media screen and (min-width: 768px) {
