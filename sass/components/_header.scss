@@ -88,19 +88,19 @@
 }
 
 .email-and-phone {
-    display: flex;
+    // display: flex;
 
-    margin-left: auto;
-    align-items: center;
+    // margin-left: auto;
+    // align-items: center;
 
         &--item {
-            display: inline-flex;
+            // display: inline-flex;
         }
 }
 
 .email {
-    display: inline-flex;
-    margin-right: 31px;
+    // display: inline-flex;
+    // margin-right: 31px;
     color: $text_color;
 
     font-weight: 500;
@@ -142,7 +142,7 @@
   }
 
 .phone {
-    display: inline-flex;
+    // display: inline-flex;
     color: $text_color;
 
     font-weight: 500;

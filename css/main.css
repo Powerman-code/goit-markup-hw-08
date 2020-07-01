@@ -109,27 +109,7 @@ textarea {
   border-radius: 2px;
 }
 
-.email-and-phone {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.email-and-phone--item {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
 .email {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-right: 31px;
   color: #757575;
   font-weight: 500;
   font-size: 14px;
@@ -176,9 +156,6 @@ textarea {
 }
 
 .phone {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   color: #757575;
   font-weight: 500;
   font-size: 14px;
@@ -209,6 +186,24 @@ textarea {
   margin-right: auto;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .overlay {
   margin-left: auto;
   margin-right: auto;
@@ -233,7 +228,7 @@ textarea {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (min-width: 480px) {
   .section,
   .work,
   .team,
@@ -243,7 +238,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .section,
   .work,
   .team,
@@ -268,21 +263,11 @@ textarea {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .section-title,
   .work-title,
   .team-title,
   .clients {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1170px) {
-  .section-title,
-  .work-title,
-  .team-title,
-  .clients {
-    width: 1170px;
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -292,7 +277,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -302,35 +287,24 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .section-list {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1170px) {
-  .section-list {
-    width: 1170px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .section-item {
-    display: block;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 30px;
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-item {
+    width: calc((100% - 15px * 4) / 2);
   }
 }
 
@@ -355,7 +329,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .section-block {
     width: 1170px;
     width: 33.3333%;
@@ -410,7 +384,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .undersection {
     width: 1170px;
   }
@@ -524,7 +498,7 @@ textarea {
 }
 
 /* Постоянные клиенты */
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .clients-section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -538,31 +512,30 @@ textarea {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
-@media screen and (min-width: 1170px) {
-  .clients-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+@media screen and (min-width: 480px) {
+  .clients-item {
+    width: calc((100% - 15px * 4) / 2);
+    margin-bottom: 30px;
+    margin: 15px;
+  }
+  .clients-item:nth-last-child(-n+2) {
+    margin-bottom: 0;
   }
 }
 
-.clients-item {
-  width: calc((100% - 30px) / 2);
-  margin-bottom: 30px;
-}
-
-.clients-item:nth-child(odd) {
-  margin-left: 15px;
-}
-
-.clients-item:nth-child(2n) {
-  margin-left: 15px;
+@media screen and (min-width: 768px) {
+  .clients-item {
+    width: calc((100% - 15px * 6) / 3);
+    margin-bottom: 30px;
+    margin: 15px;
+  }
+  .clients-item:nth-last-child(-n+3) {
+    margin-bottom: 0;
+  }
 }
 
 .icon-yaco {
@@ -718,7 +691,6 @@ textarea {
 }
 
 .footer .footer-adress2 {
-  margin-top: 9px;
   color: rgba(255, 255, 255, 0.6);
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -746,10 +718,6 @@ textarea {
 }
 
 .join {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-bottom: 20px;
   color: #FFFFFF;
   font-style: normal;
   font-weight: 700;
@@ -757,13 +725,6 @@ textarea {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-
-.subscribe {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-bottom: 20px;
 }
 
 .icon-send {
