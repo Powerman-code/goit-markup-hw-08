@@ -9,6 +9,9 @@
 .work,
 .team,
 .clients-section {
+    margin-left: auto;
+    margin-right: auto;
+
     @media screen and (min-width: 480px) {
         padding-top: 60px;
         padding-bottom: 60px;
@@ -28,11 +31,7 @@
         padding-bottom: 94px;
         border-bottom: 1px solid $background_color;
     }
-  }
-
-
-
-
+}
 
 .section-title,
 .work-title,
@@ -92,17 +91,18 @@
 .section-list {
 
     @media screen and (min-width: 480px) {
-
+        width: 480px;
     }
 
     @media screen and (min-width: 768px) {
+        width: 768px;
         display: flex;
         flex-wrap: wrap;
         margin: -15px;
     }
 
     @media screen and (min-width: 1200px) {
-        // width: 1170px;
+        width: 1200px;
 
         // display: flex;
         // justify-content: space-between;
@@ -112,15 +112,14 @@
 
 .section-item {
     @media screen and (min-width: 480px) {
-        // display: block;
-        // justify-content: center;
-        // align-items: center;
-        margin: 15px;
-
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
     }
 
     @media screen and (min-width: 768px) {
         width: calc((100% - 15px * 4) / 2);
+        margin: 15px;
 
         // &:not(:last-child) {
         //     margin-bottom: 30px;
@@ -137,7 +136,9 @@
     }
 
     @media screen and (min-width: 1200px) {
-
+        // display: block;
+        // justify-content: center;
+        // align-items: center;
     }
 }
 
@@ -155,7 +156,7 @@
     }
 
     @media screen and (min-width: 768px) {
-        width: 50%px;
+
     }
 
     @media screen and (min-width: 1200px) {
