@@ -108,6 +108,7 @@
 .person-data--form{
     position: relative;
     padding: 40px;
+    text-align: center;
 }
 
 .form-header {
@@ -140,7 +141,7 @@
 
 .form-input {
     margin: 0;
-    padding: 12px 42px;
+    padding: 11px 42px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -278,9 +279,7 @@
 .form-button {
     width: 200px;
     height: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    // margin: 40px 123px 30px 125px ;
+    margin-top: 30px;
 
     &:hover, &:focus {
         cursor: pointer;
