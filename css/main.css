@@ -973,6 +973,12 @@ textarea {
   height: 20px;
 }
 
+/* Footer */
+.footer--link--socialnetworks {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #FFFFFF;
+}
+
 .footer--link--socialnetworks {
   background-color: rgba(255, 255, 255, 0.1);
   fill: #FFFFFF;
@@ -986,12 +992,18 @@ textarea {
   margin-left: 0px;
 }
 
-/* Footer */
 .footer {
   background-color: #2F303A;
 }
 
 .footer .footer-adress1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: #FFFFFF;
   font-style: normal;
   font-weight: 400;
@@ -1000,7 +1012,14 @@ textarea {
   letter-spacing: 0.03em;
 }
 
+@media screen and (max-width: 767px) {
+  .footer .footer-adress1 {
+    margin-bottom: 60px;
+  }
+}
+
 .footer .footer-adress2 {
+  margin-top: 9px;
   color: rgba(255, 255, 255, 0.6);
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -1024,10 +1043,60 @@ textarea {
 .footer-container {
   margin-left: auto;
   margin-right: auto;
-  height: 132px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-container {
+    display: block;
+    padding: 60px 15px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .footer-container {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    width: 1170px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    padding: 60px 15px;
+    width: 1170px;
+  }
+}
+
+.footer-frame {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .join-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .join {
+  display: inline-block;
+  margin-bottom: 20px;
   color: #FFFFFF;
   font-style: normal;
   font-weight: 700;
@@ -1037,13 +1106,65 @@ textarea {
   text-transform: uppercase;
 }
 
+.subscribe {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .subscribe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 60px;
+  }
+}
+
 .icon-send {
   padding-left: 10px;
   width: 24px;
   height: 24px;
 }
 
+@media screen and (max-width: 767px) {
+  .auth-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+  }
+}
+
 .footer-input {
+  padding-left: 16px;
+  height: 50px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-sizing: border-box;
@@ -1092,6 +1213,22 @@ textarea {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 767px) {
+  .footer-input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-input {
+    padding-left: 16px;
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+  }
 }
 
 .subscribe {

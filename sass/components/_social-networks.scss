@@ -71,17 +71,3 @@
   height: 20px;
 }
 
-.footer--link--socialnetworks {
-    background-color: rgba(255, 255, 255, 0.1);
-    fill: $background_text_color;
-}
-
-.footer-element {
-    &:last-child {
-        margin-right: 0px;
-    }
-
-    &:first-child {
-        margin-left: 0px;
-    }
-}
