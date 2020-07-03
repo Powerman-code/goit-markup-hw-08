@@ -26,7 +26,7 @@
         width: 768px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        // align-items: center;
     }
 
     @media screen and (min-width: 1200px) {
@@ -53,14 +53,15 @@
             color: $accent_color;
         }
 
-    @media screen and (min-width: 768px) {
-        padding-top: 24px;
-        padding-bottom: 25px;
-    }
-
     @media screen and (max-width: 767px) {
         padding-top: 16px;
         padding-bottom: 15px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 24px;
+        padding-bottom: 25px;
+        margin-right: 80px;
     }
 }
 
@@ -120,6 +121,10 @@
 
     @media screen and (min-width: 768px) {
         padding: 33px 0 32px 0;
+
+        &:not(:last-child) {
+            margin-right: 50px;
+        }
     }
 }
 
@@ -137,6 +142,10 @@
     @media screen and (max-width: 767px) {
         position: relative;
         display: inline-block;
+    }
+
+    @media screen and (min-width: 768px) {
+
     }
 
         &:hover, &:focus {
@@ -159,6 +168,7 @@
                         left: 0;
                         position: absolute;
                     }
+
 
                     @media screen and (min-width: 1200px) {
                         display: inline-block;
@@ -194,6 +204,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        justify-content: center;
 
 
     }
@@ -333,7 +344,7 @@
 
         @media screen and (min-width: 768px) {
             display: flex;
-
+            // text-align: center;
             justify-content: space-between;
             flex-grow: 1;
         }
