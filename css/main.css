@@ -1067,6 +1067,7 @@ textarea {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 450px;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -1088,18 +1089,14 @@ textarea {
           transform: translate(-50%, -50%) scale(1.2);
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 479px) {
   .modal {
-    width: 450px;
-    height: 609px;
+    width: calc(100% - 30px);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     width: 528px;
     height: 581px;
   }
@@ -1108,6 +1105,21 @@ textarea {
 .person-data--form {
   position: relative;
   padding: 40px;
+}
+
+.form-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
 }
 
 .formfield {
@@ -1122,6 +1134,12 @@ textarea {
   width: 448px;
   height: 40px;
   margin-bottom: 28px;
+}
+
+@media screen and (max-width: 1199px) {
+  .formfield {
+    width: calc(100%);
+  }
 }
 
 .form-input {
@@ -1231,6 +1249,12 @@ textarea {
   color: #2196F3;
 }
 
+@media screen and (max-width: 1199px) {
+  .comment {
+    width: calc(100%);
+  }
+}
+
 .checkbox {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -1268,25 +1292,11 @@ textarea {
   border-color: #2196F3;
 }
 
-.form-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 30px;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-
 .form-button {
   width: 200px;
   height: 50px;
-  margin: 40px 123px 30px 125px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .form-button:hover, .form-button:focus {
