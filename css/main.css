@@ -979,11 +979,6 @@ textarea {
   fill: #FFFFFF;
 }
 
-.footer--link--socialnetworks {
-  background-color: rgba(255, 255, 255, 0.1);
-  fill: #FFFFFF;
-}
-
 .footer-element:last-child {
   margin-right: 0px;
 }
@@ -1091,6 +1086,9 @@ textarea {
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
