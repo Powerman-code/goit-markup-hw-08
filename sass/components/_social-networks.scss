@@ -6,20 +6,32 @@
 
 .social-networks {
     display: flex;
+    justify-content: center;
+    align-items: center;
 
-    @media screen and (max-width: 1199px) {
-        justify-content: center;
-        align-items: center;
-    }
+    // @media screen and (max-width: 1199px) {
+    //     justify-content: center;
+    //     align-items: center;
+    // }
+
+    // @media screen and (min-width: 1200px) {
+    //     justify-content: center;
+    //     align-items: center;
+    // }
+
 }
 
 .sn-element {
-
-    @media screen and (max-width: 767px) {
-        &:not(:last-child) {
-            margin-right: 10px;
-        }
+    &:not(:last-child) {
+        margin-right: 10px;
     }
+
+
+    // @media screen and (max-width: 767px) {
+    //     &:not(:last-child) {
+    //         margin-right: 10px;
+    //     }
+    // }
 
     @media screen and (min-width: 768px) {
 

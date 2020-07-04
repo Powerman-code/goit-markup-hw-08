@@ -35,9 +35,6 @@
             }
         }
 
-
-
-
         & .footer-adress2 {
             margin-top: 9px;
             color: rgba(255, 255, 255, 0.6);
@@ -67,11 +64,12 @@
     // display: flex;
     // justify-content: space-between;
     // align-items: baseline;
-
+    // padding-left: 15px;
+    // padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 
-    // padding: 60px 15px;
+    padding: 60px 15px;
     // width: 1170px;
     // height: 132px;
 
@@ -80,26 +78,30 @@
         // flex-direction: column;
         // flex-wrap: wrap;
 
-        padding: 60px 15px;
+        // padding: 60px 15px;
         text-align: center;
     }
 
     @media screen and (min-width: 480px) {
-        width: 450px;
+        width: 480px;
     }
 
     @media screen and (min-width: 768px) {
-        // width: 768px;
+        width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
     }
 
     @media screen and (min-width: 1200px) {
-        width: 1170px;
+        width: 1200px;
         display: flex;
         justify-content: space-between;
         align-items: baseline;
         padding: 60px 15px;
-        width: 1170px;
-        // height: 132px;
+        text-align: left;
+
     }
 }
 
@@ -132,7 +134,7 @@
 
 .subscribe {
     margin-bottom: 20px;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -140,13 +142,13 @@
     }
 
     @media screen and (min-width: 1200px) {
-        // display: inline-flex;
-        // margin-bottom: 20px;
+        display: inline-flex;
+        margin-bottom: 20px;
     }
 }
 
 .icon-send {
-    padding-left: 10px;
+    margin-left: 10px;
     width: 24px;
     height: 24px;
 }
@@ -159,6 +161,14 @@
         flex-wrap: wrap;
         align-items: center;
     }
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        // flex-direction: column;
+        // flex-wrap: wrap;
+        // align-items: stretch;
+    }
+
     @media screen and (min-width: 1200px) {
         display: flex;
         align-items: baseline;
@@ -192,14 +202,19 @@
             color: rgba(255, 255, 255, 0.6);
         }
 
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 1199px) {
             width: 100%;
             margin-bottom: 20px;
         }
 
+        // @media screen and (min-width: 768px) {
+        //     width: 100%;
+        //     margin-bottom: 20px;
+        // }
+
 
         @media screen and (min-width: 1200px) {
-            padding-left: 16px;
+            // padding-left: 16px;
             width: 358px;
             height: 50px;
             margin-right: 12px;
