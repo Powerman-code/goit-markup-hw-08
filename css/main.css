@@ -1014,15 +1014,6 @@ textarea {
   margin-right: 10px;
 }
 
-@media screen and (min-width: 1200px) {
-  .sn-element:last-child {
-    margin-right: 32px;
-  }
-  .sn-element:first-child {
-    margin-left: 32px;
-  }
-}
-
 .link-socialnetworks {
   width: 44px;
   height: 44px;
