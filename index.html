@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body class="page">
@@ -23,8 +23,8 @@
               aria-controls="menu-container"
               data-menu-button>
               <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                <use class="icon-cross" href="./images/symbol-defs.svg#icon-close_form_icon"></use>
-                <use class="icon-menu" href="./images/symbol-defs.svg#icon-icon-menu_mobile"></use>
+                <use class="icon-cross" href="./images/symbol-defs.svg#icon-icon-menu_mobile"></use>
+                <use class="icon-menu" href="./images/symbol-defs.svg#icon-close_form_icon"></use>
               </svg>
             </button>
 
@@ -56,7 +56,6 @@
 
             </div>
 
-
       </div>
     </header>
 
@@ -65,7 +64,7 @@
         <section class="hero">
           <div class="overlay">
             <div class="container">
-              <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
+              <h1 class="hero-title">эффективные решения<br>для вашего бизнеса</h1>
               <button class="button primary hero-button" data-open-modal>Заказать услугу</button>
             </div>
           </div>
@@ -177,7 +176,13 @@
 
             <li class="team-element">
               <div class="team-card">
-                <img src="./images/john_smith.jpg" alt="John Smith" width="270" />
+                <div class="team-photo">
+                  <img
+                    srcset="
+                      ./images/team/john_smith.jpg 1x,
+                      ./images/team/john_smith-2x.jpg 2x"
+                      src="./images/team/john_smith.jpg" alt="John Smith" />
+                </div>
                 <h3 class="team-member">John Smith</h3>
                 <p class="team-text">Product Designer</p>
 
@@ -221,7 +226,12 @@
 
             <li class="team-element">
               <div class="team-card">
-                <img src="./images/marta_stewart.jpg" alt="Marta Stewart" width="270" />
+                <div class="team-photo">
+                  <img srcset="
+                  ./images/team/marta_stewart.jpg 1x,
+                  ./images/team/marta_stewart-2x.jpg 2x"
+                  src="./images/team/marta_stewart.jpg" alt="Marta Stewart" />
+                </div>
                 <h3 class="team-member">Marta Stewart</h3>
                 <p class="team-text">Frontend Developer</p>
                 <ul class="social-networks team-networks">
@@ -264,7 +274,12 @@
 
             <li class="team-element">
                 <div class="team-card">
-                  <img src="./images/robert_jakis.jpg" alt="Robert Jakis" width="270" />
+                  <div class="team-photo">
+                    <img srcset="
+                    ./images/team/robert_jakis.jpg 1x,
+                    ./images/team/robert_jakis-2x.jpg 2x"
+                    src="./images/team/robert_jakis.jpg" alt="Robert Jakis" />
+                  </div>
                   <h3 class="team-member">Robert Jakis</h3>
                   <p class="team-text">Marketing</p>
                   <ul class="social-networks team-networks">
@@ -307,7 +322,12 @@
 
             <li class="team-element">
               <div class="team-card">
-                <img src="./images/martin_doe.jpg" alt="Martin Doe" width="270" />
+                <div class="team-photo">
+                  <img srcset="
+                  ./images/team/martin_doe.jpg 1x,
+                  ./images/team/martin_doe-2x.jpg 2x"
+                  src="./images/team/martin_doe.jpg" alt="Martin Doe" />
+                </div>
                 <h3 class="team-member">Martin Doe</h3>
                 <p class="team-text">UI Designer</p>
                 <ul class="social-networks team-networks">

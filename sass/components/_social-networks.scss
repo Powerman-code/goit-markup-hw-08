@@ -7,19 +7,15 @@
 .social-networks {
     display: flex;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 1199px) {
         justify-content: center;
         align-items: center;
-    }
-
-    @media screen and (min-width: 768px) {
-
     }
 }
 
 .sn-element {
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 767px) {
         &:not(:last-child) {
             margin-right: 10px;
         }
@@ -41,8 +37,6 @@
             margin-left: 32px;
         }
     }
-
-
 }
 
 
