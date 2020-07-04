@@ -430,7 +430,7 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    width: 1170px;
   }
 }
 
@@ -487,7 +487,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .section-title,
   .work-title,
   .team-title,
@@ -515,14 +515,6 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    border-bottom: 1px solid #E5E5E5;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .section-list {
     display: -webkit-box;
@@ -530,17 +522,26 @@ textarea {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 0 -15px;
+    margin: -15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .section-list {
-    width: 1200px;
+    width: 1170px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .section-item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -549,10 +550,19 @@ textarea {
 @media screen and (min-width: 768px) {
   .section-item {
     width: calc((100% - 15px * 4) / 2);
-    margin: 0 15px;
+    margin: 15px;
   }
-  .section-item:nth-last-child(-n + 2) {
-    margin-bottom: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-item {
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -698,75 +708,36 @@ textarea {
   margin-bottom: 16px;
 }
 
-.team-container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-}
-
-@media screen and (min-width: 480px) {
-  .team-container {
-    width: 450px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .team-container {
-    width: 738px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .team-container {
-    max-width: 1200px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .team-list {
-    width: 480px;
-    margin-left: -15px;
-    margin-right: -15px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .team-list {
-    width: 768px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team-list {
-    width: 1200px;
+    width: 1170px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
-@media screen and (min-width: 480px) {
-  .team-element {
-    margin: 15px;
-  }
+@media screen and (max-width: 767px) {
   .team-element:not(:last-child) {
     margin-bottom: 30px;
-  }
-  .team-element:last-child {
-    margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 768px) {
   .team-element {
     width: calc((100% - 15px * 4) / 2);
-  }
-  .team-element:nth-last-child(-n + 2) {
-    margin-bottom: 0;
+    margin: 15px;
   }
 }
 
