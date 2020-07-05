@@ -1801,8 +1801,7 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .portfolio {
-    margin-bottom: 94px;
-    width: 1170px;
+    max-width: 1200px;
   }
 }
 
@@ -1824,6 +1823,7 @@ textarea {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
@@ -1845,12 +1845,6 @@ textarea {
 .card:hover, .card:focus {
   -webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
           box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
-}
-
-@media screen and (min-width: 1200px) {
-  .card {
-    width: 370px;
-  }
 }
 
 .card-content {
@@ -1883,15 +1877,22 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .portfolio-element {
-    width: calc((100% - 60px) / 3);
-    margin-right: 30px;
-    margin-bottom: 30px;
+    width: calc((100% - 15px * 6) / 3);
+    margin: 15px;
   }
 }
 
 .card-image {
   position: relative;
   overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .card-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 768px) {
