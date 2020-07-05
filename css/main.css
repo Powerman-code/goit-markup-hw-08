@@ -392,6 +392,7 @@ textarea {
   .menu-container {
     display: none;
     position: absolute;
+    z-index: 99;
     top: 100%;
     left: 0;
     width: 100%;
@@ -1379,6 +1380,7 @@ textarea {
   background-color: #2196F3;
   border-color: transparent;
   fill: #FFFFFF;
+  line-height: 1.875;
 }
 
 .button.secondary {
@@ -1725,21 +1727,47 @@ textarea {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 94px;
-  margin-bottom: 50px;
-  width: 1170px;
+}
+
+@media screen and (max-width: 767px) {
+  .filter {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter {
+    max-width: 1200px;
+  }
 }
 
 .filter-button-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .filter-button-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter-button-block {
+    margin-bottom: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .filter-element {
@@ -1756,24 +1784,54 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0 px;
-  margin-bottom: 94px;
-  width: 1170px;
   color: #212121;
 }
 
-.portfolio-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+@media screen and (max-width: 767px) {
+  .portfolio {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    margin-bottom: 94px;
+    width: 1170px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .card {
-  width: 370px;
   overflow: hidden;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border: 1px solid #EEEEEE;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
@@ -1787,6 +1845,12 @@ textarea {
 .card:hover, .card:focus {
   -webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
           box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    width: 370px;
+  }
 }
 
 .card-content {
@@ -1804,24 +1868,38 @@ textarea {
   padding-bottom: 20px;
 }
 
-.portfolio-element {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .portfolio-element:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
-.portfolio-element:nth-child(3n) {
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .portfolio-element {
+    width: calc((100% - 15px * 4) / 2);
+    margin: 15px;
+  }
 }
 
-.portfolio-element:nth-last-child(-n + 3) {
-  margin-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .portfolio-element {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .card-image {
   position: relative;
-  margin-bottom: 20px;
   overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .card-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .card-header {
