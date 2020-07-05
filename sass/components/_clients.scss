@@ -6,38 +6,34 @@
 }
 
 .clients-list {
-    @media screen and (max-width: 767px) {
-        display: flex;
-        flex-wrap: wrap;
-        margin: -15px;
-    }
+    display: flex;
+    margin: -15px;
 
-    @media screen and (min-width: 768px) {
-        display: flex;
+    @media screen and (max-width: 1199px) {
         flex-wrap: wrap;
-        margin: -15px;
     }
 
     @media screen and (min-width: 1200px) {
-        display: flex;
         justify-content: space-between;
     }
 }
 
 .clients-item {
+    margin: 15px;
+
     @media screen and (max-width: 767px) {
         width: calc((100% - 15px * 4) / 2);
-        margin: 15px;
+
     }
 
     @media screen and (min-width: 768px) {
         width: calc((100% - 15px * 6) / 3);
-        margin: 15px;
+
     }
 
     @media screen and (min-width: 1200px) {
         width: calc((100% - 15px * 12) / 6);
-        margin: 15px;
+
     }
 }
 
@@ -76,9 +72,7 @@
 .clients-link {
     @include flex-center(flex);
 
-    // width: 170px;
     height: 89px;
-    // box-sizing: border-box;
     border: 1px solid $buttons_color;
     border-radius: 4px;
     fill: $buttons_color;
@@ -89,17 +83,4 @@
             border: 1px solid $accent_color;
             fill: $accent_color;
         }
-
-    @media screen and (max-width: 480px) {
-
-    }
-
-    @media screen and (min-width: 768px) {
-
-    }
-
-    @media screen and (min-width: 1200px) {
-         width: 170px;
-         box-sizing: border-box;
-    }
 }
