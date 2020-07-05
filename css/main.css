@@ -767,7 +767,7 @@ textarea {
 }
 
 .team {
-  background-color: #c42d67;
+  background-color: #F5F4FA;
 }
 
 .team .team-text {
@@ -1778,6 +1778,12 @@ textarea {
   margin-right: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .filter-element {
+    margin-bottom: 15px;
+  }
+}
+
 .portfolio {
   padding-left: 15px;
   padding-right: 15px;
@@ -1891,15 +1897,7 @@ textarea {
   .card-image {
     display: block;
     width: 100%;
-    height: auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .card-image img {
-    display: block;
-    width: 100%;
-    height: auto;
+    height: 292px;
   }
 }
 
