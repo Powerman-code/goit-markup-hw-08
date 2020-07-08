@@ -1432,7 +1432,7 @@ textarea {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 450px;
+  width: 480px;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -1629,22 +1629,34 @@ textarea {
 
 .form-checkbox {
   position: relative;
-  display: inline-block;
-  margin-left: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 20px;
+  text-align: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
 }
 
+@media screen and (min-width: 1200px) {
+  .form-checkbox {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
 .icon-check {
   position: absolute;
-  top: 4px;
-  left: -20px;
+  top: 0;
+  left: 0;
   display: block;
   width: 13px;
   height: 12px;

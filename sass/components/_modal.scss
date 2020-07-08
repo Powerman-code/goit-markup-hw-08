@@ -67,7 +67,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 450px;
+    width: 480px;
 
 
     transform: translate(-50%, -50%) scale(1);
@@ -241,26 +241,36 @@
 }
 
 .form-checkbox {
+
     position: relative;
 
-    display: inline-block;
-    margin-left: 36px;
+    // max-width: 370px;
+    display: flex;
+    // margin-left: 36px;
     margin-top: 20px;
+    text-align: end;
+    justify-content: flex-end;
+    // align-items: center;
     font-family: $main-font;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
 
     letter-spacing: 0.03em;
 
     color: $text_color;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .icon-check {
     position: absolute;
-    top: 4px;
-    left: -20px;
+    top: 0;
+    left: 0;
     display: block;
     width: 13px;
     height: 12px;
